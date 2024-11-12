@@ -116,3 +116,63 @@ body {
     width: 50%;
 }
 
+.main__projects {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main__project--element {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 390px;
+    background-color: black;
+    box-shadow: 2px, 2px, 3px rgba(0, 0, 0, 0.911);
+
+}
+
+.project__header {
+    display: flex;
+    gap: 5px;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__content {
+    padding: 1rem;
+}
+
+.project__lenguages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.project__icon {
+    width: 24px;
+}
+
+.project__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.project__button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: .5rem;
+    border-radius: 15px;
+    background-color: aqua;
+
+    font-weight: bold;
+}
