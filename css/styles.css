@@ -26,7 +26,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     padding: 0rem 2rem;
     font-family: var(--fuente-principal);
 }
@@ -48,23 +49,89 @@ body {
     gap: 15px;
 }
 
-.header__link {
+.header__link, .content__link {
     color: black;
     transition: .5s color ease;
 }
-
 .header__link--email {
     font-weight: bold;
 }
 
-.header__link:hover {
+.header__link:hover, .content__link:hover {
     color: rgb(117, 170, 170);
 }
+
+.main {
+    width: 100%;
+    font-family: var(--fuente-principal);
+}
+
+.main__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.main__content--bg_secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+    padding: 4rem 0rem;
+    width: 100% !important;
+}
+
+.content__presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content__aboutme {
+    width: 90%;
+}
+
+.description__title {
+    font-size: 2.5rem;
+}
+
+.description__text {
+    width: 90%;
+}
+
+.content__links {
+    display: flex;
+    gap: 15px;
+}
+
+.content__link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
+    font-weight: 700;
+}
+
+.photo_me {
+    width: 350px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5)
+}
+
 
 @media (max-width: 800px) {
 
     .header {
-        padding: 0 .5rem;
+        padding: .9rem;
     }
 
     .header__nav {
@@ -89,4 +156,42 @@ body {
         font-size: .8rem;
         font-weight: 500;
     }
+
+    .main__content--bg_secondary {
+        padding: 1rem 0rem;
+    }
+
+    .content__presentation {
+        flex-direction: column;
+    }
+
+    .description__title {
+        padding-top: .7rem;
+        font-size: 1.5rem;
+    }
+    
+    .content__description {
+        order: 2;
+    }
+
+    .content__aboutme {
+        width: 90%;
+        padding: .5rem;
+    }
+
+    .content__links {
+        gap: 5px;
+        padding-bottom: 1rem;
+    }
+    
+    .content__link {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    .photo_me {
+        width: 40%;
+        height: 40%;
+    }
+
 }
