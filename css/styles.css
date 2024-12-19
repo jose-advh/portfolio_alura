@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-general: #F5F5F5;
+    --color-secundario: #EAF2FD;
+    --fuente-principal: "Raleway", serif;
+}
+
+body {
+    background-color: var(--color-general);
+}
+
+.mostrar {
+    display: block !important;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0rem 2rem;
+    font-family: var(--fuente-principal);
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem;
+}
+
+.header__title {
+    font-weight: bold;
+}
+
+.header__list {
+    display: flex;
+    gap: 15px;
+}
+
+.header__link {
+    color: black;
+    transition: .5s color ease;
+}
+
+.header__link--email {
+    font-weight: bold;
+}
+
+.header__link:hover {
+    color: rgb(117, 170, 170);
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        padding: 0 .5rem;
+    }
+
+    .header__nav {
+        flex-direction: column;
+    }
+
+    .header__list {
+        position: fixed;
+        flex-direction: column;
+        top: 5%;
+        right: 5%;
+        background-color: antiquewhite;
+        padding: 1rem;
+    }
+
+    .header__list--none {
+        display: none !important;
+    }
+
+    .header__link--email {
+        display: block !important;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+}
