@@ -23,13 +23,15 @@ body {
 }
 
 .header {
+    position: fixed;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    padding: 0rem 2rem;
+    padding: 0 4rem;
     font-family: var(--fuente-principal);
+    background-color: var(--color-general);
 }
 
 .header__nav {
@@ -62,6 +64,7 @@ body {
 }
 
 .main {
+    padding-top: 5rem;
     width: 100%;
     font-family: var(--fuente-principal);
 }
@@ -127,6 +130,17 @@ body {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, .5)
 }
 
+@media (max-width: 330px) {
+    .content__link {
+        font-size: .8rem !important;
+        font-weight: 600;
+    }
+
+    .content__link > img {
+        width: 10px;
+    }
+}
+
 
 @media (max-width: 800px) {
 
@@ -141,7 +155,7 @@ body {
     .header__list {
         position: fixed;
         flex-direction: column;
-        top: 5%;
+        top: 8%;
         right: 5%;
         background-color: antiquewhite;
         padding: 1rem;
